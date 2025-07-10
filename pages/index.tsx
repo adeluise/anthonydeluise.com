@@ -18,7 +18,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-900 py-12 px-4 sm:px-6 lg:px-8 font-body transition-colors duration-200">
+    <div className="min-h-screen bg-custom-bg dark:bg-slate-900 py-12 px-4 sm:px-6 lg:px-8 font-body transition-colors duration-200">
       <Head>
         <title>Anthony DeLuise ☕️</title>
         <link rel="icon" href="/favicon.ico" />
@@ -32,10 +32,10 @@ export default function Home() {
           >
             {darkMode ? '☀️' : '🌙'}
           </button>
-          <h1 className="font-header text-4xl text-gray-900 dark:text-gray-100 sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <h1 className="font-header text-4xl text-custom-text dark:text-gray-100 sm:text-5xl sm:tracking-tight lg:text-6xl">
             Anthony DeLuise
           </h1>
-          <p className="mt-3 text-base text-gray-500 dark:text-gray-400 sm:mt-5 sm:text-lg">
+          <p className="mt-3 text-base text-custom-primary dark:text-gray-400 sm:mt-5 sm:text-lg">
             Product Person &amp; Designer
           </p>
         </div>
