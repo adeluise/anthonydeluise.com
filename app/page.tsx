@@ -1,4 +1,5 @@
-import Head from 'next/head'
+'use client'
+
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 
@@ -19,11 +20,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-ecru dark:bg-near-black py-12 px-4 sm:px-6 lg:px-8 font-body transition-colors duration-200">
-      <Head>
-        <title>Anthony DeLuise ☕️</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className="max-w-3xl mx-auto">
         <div className="text-left">
           <button
@@ -98,4 +94,4 @@ export default function Home() {
       </footer>
     </div>
   )
-}
+} 
