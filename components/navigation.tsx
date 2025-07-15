@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
-import { Button } from './ui/button'
 import { Sun, Moon } from 'lucide-react'
 
 export function Navigation() {
@@ -29,7 +28,7 @@ export function Navigation() {
 
 
   return (
-    <nav className="px-4 sm:px-6 lg:px-8 h-8 pt-4">
+    <nav className="px-4 sm:px-6 lg:px-8 py-4">
       <div className="max-w-3xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-6">
           <Link 
@@ -45,26 +44,24 @@ export function Navigation() {
             Inspiration
           </Link>
         </div>
-        <Button
-          variant="ghost"
-          size="icon"
+        <button
           onClick={toggleDarkMode}
           aria-label="Toggle dark mode"
-          className="text-near-black dark:text-off-white hover:text-cornflower dark:hover:text-cornflower h-12 w-12"
+          className="text-near-black dark:text-off-white hover:text-cornflower dark:hover:text-cornflower"
         >
-          <div className="relative w-8 h-8 overflow-hidden">
-            <Sun className={`absolute inset-0 h-8 w-8 transition-all duration-500 ease-in-out ${
+          <div className="relative w-6 h-6 overflow-hidden">
+            <Sun className={`absolute inset-0 h-6 w-6 transition-all duration-500 ease-in-out ${
               darkMode 
-                ? 'opacity-0 translate-y-4' // Sun sets down when dark mode activates
-                : 'opacity-100 translate-y-0' // Sun rises up when light mode activates
+                ? 'opacity-0 translate-y-2' 
+                : 'opacity-100 translate-y-0'
             }`} />
-            <Moon className={`absolute inset-0 h-8 w-8 transition-all duration-500 ease-in-out ${
+            <Moon className={`absolute inset-0 h-6 w-6 transition-all duration-500 ease-in-out ${
               darkMode 
-                ? 'opacity-100 translate-y-0' // Moon rises up when dark mode activates
-                : 'opacity-0 translate-y-4' // Moon sets down when light mode activates
+                ? 'opacity-100 translate-y-0' 
+                : 'opacity-0 translate-y-2'
             }`} />
           </div>
-        </Button>
+        </button>
       </div>
     </nav>
   )
