@@ -34,6 +34,11 @@ export default function Inspiration() {
                 "The Death of Product Development as We Know it"
               </a> by Julie Zhuo
             </li>
+            <li>
+              <a href="https://tomtunguz.com/pricing-guide/" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
+                "The Complete Guide to SaaS Pricing Strategy"
+              </a> by Tomasz Tunguz
+            </li>
           </ul>
 
           <h2 className="font-heading text-2xl text-near-black dark:text-off-white mt-12 mb-4">
