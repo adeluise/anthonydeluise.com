@@ -5,15 +5,42 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { Sun, Moon } from 'lucide-react'
 
+// Helper function to get the system preference
+const getSystemPreference = (): boolean => {
+  // Return false (light mode) during SSR or if matchMedia is not available
+  if (typeof window === 'undefined' || !window.matchMedia) {
+    return false
+  }
+  
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
+}
+
 export function Navigation() {
+  // Initialize to false during SSR to prevent hydration mismatch
   const [darkMode, setDarkMode] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
-    setDarkMode(document.documentElement.classList.contains('dark'))
+    // Check if the document already has dark class (from our blocking script)
+    const hasDarkClass = document.documentElement.classList.contains('dark')
+    
+    if (hasDarkClass) {
+      // If dark class exists, use it
+      setDarkMode(true)
+    } else {
+      // Otherwise, check system preference
+      const systemPreference = getSystemPreference()
+      setDarkMode(systemPreference)
+      
+      // Apply the class if system prefers dark mode
+      if (systemPreference) {
+        document.documentElement.classList.add('dark')
+      }
+    }
   }, [])
 
   useEffect(() => {
+    // Update document class when darkMode state changes
     if (darkMode) {
       document.documentElement.classList.add('dark')
     } else {
@@ -24,8 +51,6 @@ export function Navigation() {
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev)
   }
-
-
 
   return (
     <nav className="px-4 sm:px-6 lg:px-8 py-4">
