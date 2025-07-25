@@ -19,6 +19,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                // Check system preference and apply dark class before any content renders
+                if (typeof window !== 'undefined' && window.matchMedia) {
+                  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (prefersDark) {
+                    document.documentElement.classList.add('dark');
+                  }
+                }
+              })();
+            `,
+          }}
+        />
         <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500&family=Geist:wght@400&display=swap" rel="stylesheet" />
       </head>
       <body className="bg-ecru dark:bg-near-black transition-colors duration-200">
