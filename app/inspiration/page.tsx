@@ -35,9 +35,9 @@ export default function Inspiration() {
               </a> by Julie Zhuo
             </li>
             <li>
-              <a href="https://tomtunguz.com/pricing-guide/" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
-                "The Complete Guide to SaaS Pricing Strategy"
-              </a> by Tomasz Tunguz
+              <a href="https://www.derekthompson.org/p/why-everything-became-television" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
+                "Everything Is Television"
+              </a> by Derek Thompson
             </li>
           </ul>
 
