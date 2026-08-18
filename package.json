@@ -2,6 +2,9 @@
   "name": "personal-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,7 +23,7 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
-    "@types/node": "22.2.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^17.0.0",
     "autoprefixer": "^10.0.1",
     "postcss": "^8.0.0",
