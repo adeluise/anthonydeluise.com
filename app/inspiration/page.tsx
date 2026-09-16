@@ -25,14 +25,14 @@ export default function Inspiration() {
               </a> by Molly Graham
             </li>
             <li>
-              <a href="https://waitbutwhy.com/2014/05/fermi-paradox.html" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
-                "The Fermi Paradox"
-              </a> by Tim Urban
+              <a href="https://usefulfictions.substack.com/p/how-to-be-more-agentic" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
+                "How to Be More Agentic"
+              </a> by Cate Hall
             </li>
             <li>
-              <a href="https://lg.substack.com/p/the-death-of-product-development" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
-                "The Death of Product Development as We Know it"
-              </a> by Julie Zhuo
+              <a href="https://randsinrepose.com/archives/minimum-viable-curiosity/" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
+                "Minimum Viable Curiosity"
+              </a> by Michael Lopp
             </li>
             <li>
               <a href="https://www.derekthompson.org/p/why-everything-became-television" className="underline underline-offset-2 decoration-cornflower decoration-2 text-near-black dark:text-off-white hover:text-cornflower relative overflow-hidden before:absolute before:left-0 before:right-0 before:top-1 before:bottom-1 before:bg-cornflower before:bg-opacity-20 before:scale-x-0 before:origin-left hover:before:scale-x-100 before:transition-transform before:duration-300 before:ease-out" target="_blank" rel="noopener noreferrer">
